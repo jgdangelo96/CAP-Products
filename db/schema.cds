@@ -61,12 +61,14 @@ entity Months {
 
 entity ProductReview {
     key Name    : String;
-        Reting  : Integer;
+        Rating  : Integer;
         Comment : String;
 
 };
 
 entity SalesData {
-    key DeliveryDate : DateTime;
+
+    key ID           : UUID;
+        DeliveryDate : DateTime;
         Revenue      : Decimal(16, 2);
 }
